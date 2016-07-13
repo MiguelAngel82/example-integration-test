@@ -20,11 +20,20 @@ There are two important annotations in this tests (at class level):
 To execute integration test there are two ways:
 
 - Via Grails CLI: 
-	`grails test-app -integration`
+	```sh 
+	grails test-app -integration
+	```
+
 - Via Gradle Wrapper (**Recommended**): 
-	`gradlew integrationTest`
+	```sh
+	gradlew integrationTest
+	```
 	
 	- If you want to execute an individual test you can execute: 
-	`gradlew integrationTest --tests example.integration.tests.BookIntegrationTestOneSpec` 
+	```sh
+	gradlew integrationTest --tests example.integration.tests.BookIntegrationTestOneSpec
+	```
 	- Or if you want to execute some tests included in a package: 
-   `gradlew integrationTest --tests example.integration.tests.*` 
+	```sh
+   gradlew integrationTest --tests example.integration.tests.*
+   ```
